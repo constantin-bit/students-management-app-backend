@@ -27,7 +27,7 @@ def loadFromCSV():
     pathCSV = input("Введите полный путь CSV файла: \n")
     students = []
     try:
-        with open(pathCSV, encoding='utf-8') as f:
+        with open(pathCSV.split(), encoding='utf-8') as f:
             reader = csv.reader(f)
             row_size = -1
             lineNumber = -1
